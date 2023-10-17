@@ -1,4 +1,3 @@
-FROM centos:7
+FROM nginx
+EXPOSE 80
 
-RUN for user in naga; do useradd $user; echo "1234" | passwd $user --stdin; done
-RUN yum update -y && yum install mysql -y
